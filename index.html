@@ -1,524 +1,129 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" >
 <head>
 <meta charset="UTF-8">
-<title>ServiTV</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style type="text/css">
-*{user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}
-body{background:#fff;}
-div .poster{overflow-x:scroll;overflow-y:hidden;white-space:nowrap;margin:3px;}
-#xs-header{background:#000;left: 0;position: fixed;top:0px;width: 100%;z-index: 90;height: 8%;}
-footer{background:#000;display:flex;width:100%;bottom:0;justify-content:space-around;align-items:center;padding:6px 2px;position:fixed;left:0;right:0px;color:#fff;}
-footer div{font-size:10px;text-align:center;justify-content:center;align-items:center;}
-footer i{padding-left:0px;}
-/*footer end Ancho 1280 Alto 720 pixele */
-footer img{height:20px;width:20px;margin-bottom:3px;}
-footer svg{height:20px;width:20px;margin-bottom:3px;}
-</style>
-</head>
-<body>
-<div id="xs-header">
-<center><h1 style="color:#fff;font-size:35px;">Servi<strong style="color:#00FFFF;">TV</strong></h1></center>
-</div></div><br><br>
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>S</title>
+<title>By ServiSolan</title>
 <!-- Responsive viewport -->
 <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
-<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css"/>
-<style type="text/css">
-*{margin:0;padding:0;box-sizing:border-box;text-transform:capitalize;}
-body{background:#000;}
-.heading{color:#444;font-size:40px;text-align:center;padding:10px;}
-.container{display:grid;grid-template-columns:2fr 1fr;gap:15px;align-items:flex-start;padding:5px 5%;}
-.container .main-video{background:#151515;border-radius:5px;padding:10px;}
-.container .main-video video{width:100%;border-radius:5px;}
-.container .main-video .title{
-color:#fff;font-size:23px;padding-top:15px;padding-bottom:15px;}
-.container .video-list{
-background:#151515;border-radius:5px;height:317px;overflow-y:scroll;}
-.container .video-list::-webkit-scrollbar{
-width:7px;}
-.container .video-list::-webkit-scrollbar-track{
-background:#000;border-radius:50px;}
-.container .video-list::-webkit-scrollbar-thumb{
-background:#00FFFF;border-radius:50px;}
-.container .video-list .vid video{
-width:100px;border-radius:5px;}
-.container .video-list .vid{
-background:#000;display:flex;align-items:center;gap:15px;border-radius:5px;margin:10px;padding:10px;border:1px solid rgba(0,0,0,.1);cursor:pointer;}
-.container .video-list .vid:hover{
-background:#000;}
-.container .video-list .vid.active{
-background:#00a7ad;}
-.container .video-list .vid.active .title{
-color:#fff;}
-.container .video-list .vid .title{
-color:#fff;font-size:17px;}
-@media (max-width: 999px){
-.container{grid-template-columns:1.5fr 1fr;padding:10px;}}
-@media (max-width: 768px){
-.container{grid-template-columns:1fr;}}
-</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.js"></script>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css"/>
 </head>
+
 <body>
-<div class="container">
-<div class="main-video">
-<div class="video">
-<video class='js-player' poster="https://c.tenor.com/YG_GREUD9OwAAAAC/tv-static.gif" controls autoplay>
-<source src="http://stream.laut.fm/galaxis-radio" type="application/x-mpegURL">
-</video>
-<!--<video src="" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r48KQZbrv_w2zeTpEMqrIE0BysJMnmdydw&usqp=CAU" controls muted autoplay></video>-->
-<h3 class="title">BY: SERVISOLAN</h3></div></div>
-
-<div class="video-list">
-<div class="vid active">
-<video src="https://cloudvideo.servers10.com:8081/8136/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 801</h3></div>
-
-<div class="vid">
-<video src="http://online.familylatinatv.com:88/live/5de910ea0ec86/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 802</h3></div>
-
-<div class="vid">
-<video src="http://191.97.60.193:10000/play/a020/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 803</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/stztelebista/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 804</h3></div>
-
-<div class="vid">
-<video src="https://live.obslivestream.com/crtvmux/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 805</h3></div>
-
-<div class="vid">
-<video src="http://191.97.60.193:10000/play/a03n/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 806</h3></div>
-
-<div class="vid">
-<video src="https://tv.livestreaminggroup.info:3295/live/super7tvlive.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 807</h3></div>
-
-<div class="vid">
-<video src="https://live.obslivestream.com/supercanal/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 808</h3></div>
-
-<div class="vid">
-<video src="http://191.97.60.193:10000/play/a03g/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 809</h3></div>
-
-<div class="vid">
-<video src="https://tvdirecto.teleelx.es/stream/teleelx.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 810</h3></div>
-
-<div class="vid">
-<video src="https://livetv.305streamhd.com:3111/live/suramtvlive.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 811</h3></div>
-
-<div class="vid">
-<video src="http://191.97.60.193:10000/play/a02a/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 812</h3></div>
-
-<div class="vid">
-<video src="http://160.20.165.246:8000/play/a01j/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 813</h3></div>
-
-<div class="vid">
-<video src="https://deh05ueq91v6s.cloudfront.net/SNTPY/0bd4cfaf086c4ac0ce0101172a42ba20.sdp/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 814</h3></div>
-
-<div class="vid">
-<video src="https://d2glyu450vvghm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-21u4g5cjglv02/sm.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 815</h3></div>
-
-<div class="vid">
-<video src="https://video03.logicahost.com.br/soltv/soltv/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 816</h3></div>
-
-<div class="vid">
-<video src="https://vdo1.streamgato.us:3592/live/teleorientaldigitallive.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 817</h3></div>
-
-<div class="vid">
-<video src="https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 818</h3></div>
-
-<div class="vid">
-<video src="http://190.110.109.104:52321/play/a00w/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 819</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8142/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 820</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8146/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 821</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8152/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 822</h3></div>
-
-<div class="vid">
-<video src="http://191.97.60.193:10000/play/a02n/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 823</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8158/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 824</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8184/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 825</h3></div>
-
-<div class="vid">
-<video src="https://1206618505.rsc.cdn77.org/LS-ATL-59020-1/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 826</h3></div>
-
-<div class="vid">
-<video src="https://vcp.myplaytv.com/mdatv/mdatv/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 827</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8196/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 828</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8198/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 829</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8132/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 830</h3></div>
-
-<div class="vid">
-<video src="https://s.emisoras.tv:8081/diostevekids/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 831</h3></div>
-
-<div class="vid">
-<video src="https://d1xgz5r2yxvjwj.cloudfront.net/out/v1/49d5fdc5370d4f43aab4930ec7a9cbf8/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 832</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8122/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 833</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8118/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 834</h3></div>
-
-<div class="vid">
-<video src="https://5e85d90130e77.streamlock.net/6040/6040/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 835</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8230/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 836</h3></div>
-
-<div class="vid">
-<video src="https://stmv1.srvif.com/retrotv/retrotv/playlist-480p.m3u8?PlaylistASTRAL" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 837</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8234/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 838</h3></div>
-
-<div class="vid">
-<video src="https://cloudvideo.servers10.com:8081/8140/index.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 839</h3></div>
-
-<div class="vid">
-<video src="https://vivo.solumedia.com:19360/uniteve/uniteve.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 840</h3></div>
-
-<div class="vid">
-<video src="https://live.info7.mx/info7/stream.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 841</h3></div>
-
-<div class="vid">
-<video src="https://cloud2.streaminglivehd.com:1936/universfaller/universfaller/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 842</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-021/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 843</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-026/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 844</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-028/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 845</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-029/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 846</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-030/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 847</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-031/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 848</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-032/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 849</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-033/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 850</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-034/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 851</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-035/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 852</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-036/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 853</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-037/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 854</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-039/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 855</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-040/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 856</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-044/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 857</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-045/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 858</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-046/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 859</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-047/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 860</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-048/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 861</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-049/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 862</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-055/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 863</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-057/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 864</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-058/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 865</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-059/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 866</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-060/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 867</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-062/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 868</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-063/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 869</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-065/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 870</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-066/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 871</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-067/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 872</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-068/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 873</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-069/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 874</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-071/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 875</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-072/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 876</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-074/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 877</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-079/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 878</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-082/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 879</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-094/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 880</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-097/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 881</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-099/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 882</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-100/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 883</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-104/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 884</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-107/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 885</h3></div>
-
-<div class="vid">
-<video src="https://cdnhd.iblups.com/hls/ee2450c81e554f4cae0e6292106993c2.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 886</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-109/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 887</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-110/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 888</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-111/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 889</h3></div>
-
-<div class="vid">
-<video src="http://167.114.156.136:25461/live/INFINITV/ZX89NM22/113.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 890</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-113/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 891</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-114/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 892</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-115/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 893</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-116/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 894</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-117/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 895</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-118/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 896</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-119/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 897</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-120/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 898</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-121/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 899</h3></div>
-
-<div class="vid">
-<video src="http://168.227.22.18:1935/live/mobile-123/playlist.m3u8" muted poster="https://i.imgur.com/UOWsJmZ.png"></video>
-<h3 class="title">CANAL 900</h3></div>
-
-</div></div>
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<div class="player">
+<video class="js-player" controls="" poster="https://c.tenor.com/YG_GREUD9OwAAAAC/tv-static.gif" preload="none">
+<source src="https://live.enhdtv.com:19360/nexthd/nexthd.m3u8" type="application/x-mpegURL" size="480"></source>
+</video></div></body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+<nav class="menu">
+<ul>
+ <li><a href="javascript:void();">DESCARGA NUESTRAS APK 🔗</a>
+  <ul>
+   <center><li><a><img src="https://www.udrop.com/file/LoPz/Logo.png" width="100px" height="90px"></a></li>
+  <li><a href="#"><h3>SERVIMOVIE 🎞️ 👍🏻</h3>Si eres de las personas que le gusta ver peliculas. esta aplicación es para tí.</a></li>
+ <li><a href="https://www.udrop.com/file/LxPq/pelisplus.apkdownload=true"><h3>PELISPLUS 🎬 👍🏻</h3>si te encanta el cine. esta es tú mejor opción.</a></li>
+  <li><a href="https://www.udrop.com/file/LxMV/Serviradio.apkdownload=true"><h3>SERVIRADIO 📻 👍🏻</h3>si eres amante a la música y volver a recordar. tenemos tú recuerdo aquí</a></li>
+  <li><a href="https://www.udrop.com/file/LxPe/Servitv.apk?download=true"><h3>SERVITV 📺 👍🏻</h3>Si te gusta ver las noticias, dibujos animados, documentales, o peliculas, esta aplicación es la que estas buscando</a></li>
+</ul>
+</nav>
+<style>
+.menu ul {
+list-style: none;
+
+margin: 0 auto;
+padding: 0;
+}
+.menu a {
+display: block;
+padding: 15px;
+border-bottom: 4px solid #fff;
+background: #000;
+color: #fff;
+text-decoration: none;
+font-size: 16px;
+line-height: 16px;
+text-transform: uppercase;
+}
+/* Símbolo elemento normal */
+.menu ul li a:before {
+content: "\25CF\00A0 ";
+color: #ff9900;
+width: 28px;
+display: inline-block;
+
+}
+/* Símbolo elemento desplegable cerrado */
+.menu ul li.desplegable a:before {
+content: "\25BA\00A0";
+}
+/* Símbolo elemento desplegable abierto */
+.menu ul li.desplegable.activa a:before {
+content: "\25BC\00A0 ";
+}
+/* Eliminar símbolos para sub-opciones */
+.menu ul li.desplegable ul li a:before,
+.menu ul li.desplegable.activa ul li a:before {
+content: "";
+}
+/* Lista anidada inicialmente oculta */
+.menu ul ul {
+display: none;
+width: 100%;
+}
+/* Sangrado y segundo color para sub-opciones */
+.menu ul ul a {
+padding-left: 20px;
+background: #808080;
+text-transform: capitalize;
+}
+</style>
 <script type="text/javascript">
-let listVideo = document.querySelectorAll('.video-list .vid');
-let mainVideo = document.querySelector('.main-video video');
-let title = document.querySelector('.main-video .title');
-
-listVideo.forEach(video =>{
-  video.onclick = () =>{
-    listVideo.forEach(vid => vid.classList.remove('active'));
-    video.classList.add('active');
-    if(video.classList.contains('active')){
-      let src = video.children[0].getAttribute('src');
-      mainVideo.src = src;
-      let text = video.children[1].innerHTML;
-      title.innerHTML = text;
-    };
-  };
+$(document).ready(function(){
+$('.menu > ul > li:has(ul)').addClass('desplegable');
+$('.menu > ul > li > a').click(function() {
+var comprobar = $(this).next();
+$('.menu li').removeClass('activa');
+$(this).closest('li').addClass('activa');
+if((comprobar.is('ul')) && (comprobar.is(':visible'))) {
+$(this).closest('li').removeClass('activa');
+comprobar.slideUp('normal');
+}
+if((comprobar.is('ul')) && (!comprobar.is(':visible'))) {
+$('.menu ul ul:visible').slideUp('normal');
+comprobar.slideDown('normal');
+}
+});
 });
 </script>
-<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+
+
+<script>
+// categoria arribatell the embed parent frame the height of the content
+if (window.parent && window.parent.parent){
+window.parent.parent.postMessage(["resultsFrame", {
+height: document.body.getBoundingClientRect().height,
+slug: "None"}], "*")}
+</script>
+<script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
 <script>//<![CDATA[
 const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
 //]]></script>
 </body>
-</html>
 
- <br>
-<body>
-<!--Barra de navegacion-->
-<div id="s-f"></div>
-<footer id="foot">
-<div id="foot-m">
-<a href="#"><i class="material-icons">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="white"></path></svg></i></a>
-<div>Home</div></div>
-<div id="foot-m">
-<a href="#"><i class="material-icons"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4l-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z" fill="#ccd0d2"></path></svg></i></a>
-<div>Canal + 600</div></div>
-<div id="foot-m">
-<a href="#"><i class="material-icons"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4l-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z" fill="#ccd0d2" fill="#ccd0d2"></path></svg></i></a>
-<div>Canal + 700</div></div>
-</body>
-                                 </html>
+
+
+
+<style>
+body {
+  background-image: url('https://www.udrop.com/file/LoRe/Logodeapk.jpg');
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-position: 50px 70%;
+  background-attachment: fixed;
+  background-size: 82% 40%;
+  
+}
+</style>
+
+</html>
